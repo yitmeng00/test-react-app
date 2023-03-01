@@ -3,6 +3,7 @@ import React, { Component } from "react";
 class Counter extends Component {
   state = {
     count: 0,
+    tags: ["tag1", "tag2", "tag3"],
   };
 
   render() {
@@ -10,6 +11,11 @@ class Counter extends Component {
       <div>
         <span className={this.getBadgeClasses()}>{this.formatCount()}</span>
         <button className="btn btn-secondary btn-sm">Increment</button>
+        <ul>
+          {this.state.tags.map((tag) => (
+            <li>{tag}</li>
+          ))}
+        </ul>
         <h1>Hello World</h1>
       </div>
     );
@@ -24,8 +30,6 @@ class Counter extends Component {
   formatCount() {
     const { count } = this.state;
     return count === 0 ? "Zero" : count;
-    // return html expression is allowed
-    // return count === 0 ? <h1>Zero</h1> : count;
   }
 }
 
