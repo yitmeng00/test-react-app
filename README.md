@@ -1,3 +1,12 @@
+# This is a simple react project for testing while learning Mosh Hamedani's course "React JS - React Tutorial for Beginners".
+Course Video: https://youtu.be/Ke90Tje7VS0
+
+YouTube Channel: https://www.youtube.com/@programmingwithmosh
+
+Blog: https://programmingwithmosh.com/
+
+LinkedIn: https://www.linkedin.com/in/mosh-hamedani/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
