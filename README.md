@@ -7,6 +7,8 @@ Blog: https://programmingwithmosh.com/
 
 LinkedIn: https://www.linkedin.com/in/mosh-hamedani/
 
+GitHub Repo: https://github.com/yitmeng00/test-react-app.git
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
