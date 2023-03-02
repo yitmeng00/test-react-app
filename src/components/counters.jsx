@@ -12,14 +12,24 @@ class Counters extends Component {
   };
 
   handleDelete = (counterId) => {
-    console.log("handleDelete called!", counterId)
-  }
+    const counters = this.state.counters.filter((c) => c.id !== counterId);
+    // 2 variables same so it can be simplified
+    // this.setState({ counters: counters });
+    this.setState({ counters });
+  };
 
+  // the key and id value are same, looks like repitition
+  // key attribute is used internally by react, we wont able to access it
   render() {
     return (
       <div>
         {this.state.counters.map((counter) => (
-          <Counter key={counter.id} onDelete={this.handleDelete} value={counter.value} id={counter.id} />
+          <Counter
+            key={counter.id}
+            onDelete={this.handleDelete}
+            value={counter.value}
+            id={counter.id}
+          />
         ))}
       </div>
     );
