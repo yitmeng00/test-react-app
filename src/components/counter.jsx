@@ -5,15 +5,12 @@ class Counter extends Component {
     count: 0,
   };
 
-  // Constructor in `Counter` child class
-  // Component: Constructor of parent class
-  // Call parent class using super();
-  constructor() {
-    super();
-    this.handleIncrement = this.handleIncrement.bind(this);
-  }
+  // constructor() {
+  //   super();
+  //   this.handleIncrement = this.handleIncrement.bind(this);
+  // }
 
-  handleIncrement() {
+  handleIncrement = () => {
     console.log("Increment Clicked", this);
   }
 
