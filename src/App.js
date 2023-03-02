@@ -13,6 +13,17 @@ class App extends Component {
     ],
   };
 
+  // 1st lifecycle hook
+  constructor() {
+    super();
+    console.log("App - Constructor");
+  }
+
+  // 3rd lifecycle hook
+  componentDidMount() {
+    console.log("App - Mounted");
+  }
+
   handleIncrement = (counter) => {
     const counters = [...this.state.counters];
     const index = counters.indexOf(counter);
@@ -35,6 +46,9 @@ class App extends Component {
   };
 
   render() {
+    // 2nd lifecycle hook
+    console.log("App - Rendered");
+
     return (
       <React.Fragment>
         <NavBar
